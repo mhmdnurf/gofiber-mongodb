@@ -11,5 +11,6 @@ func main() {
 	app := fiber.New()
 	configs.ConnectDB()
 	routes.BarangRoute(app)
+	routes.BahanRoute(app)
 	app.Listen(":3000")
 }
